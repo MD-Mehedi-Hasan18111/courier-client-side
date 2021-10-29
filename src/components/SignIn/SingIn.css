@@ -1,3 +1,8 @@
+.signin {
+  padding-top: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .signin-area {
   width: 500px;
   margin: 0 15px;
@@ -7,7 +12,7 @@
 .g-btn {
   border: none;
   background-color: #fff;
-  font-size: 17px;
+  font-size: 20px;
   border: 1px solid darkgray;
   border-radius: 50px;
   padding: 10px 40px;
@@ -19,6 +24,7 @@
 }
 
 .fa-google {
+  font-size: 30px;
   background: conic-gradient(
       from -45deg,
       #ea4335 110deg,

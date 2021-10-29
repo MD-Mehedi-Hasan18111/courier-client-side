@@ -11,12 +11,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="w-100" style={{background: "#ED1C24", padding: '2px'}}>
-                <div className="container">
-                    <p className="text-light fs-6"><i className="fas fa-envelope"></i> redx12bd@gmail.com</p>
-                </div>
-            </div>
-            <Navbar className="parent-nav" expand="lg">
+            <Navbar fixed="top" className="parent-nav shadow-lg" expand="lg">
             <Container>
                 <Navbar.Brand>
                     <Link to="/home">

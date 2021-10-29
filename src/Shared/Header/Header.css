@@ -9,3 +9,8 @@
 /* .navigation .selected {
   border-bottom: 2px solid #000;
 } */
+
+.parent-nav {
+  background-color: #fff;
+  z-index: 999;
+}

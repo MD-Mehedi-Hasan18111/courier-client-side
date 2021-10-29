@@ -11,7 +11,7 @@ const AddService = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data, e) => {
         
-        fetch('http://localhost:5000/addService', {
+        fetch('https://powerful-tor-47395.herokuapp.com/addService', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -32,7 +32,8 @@ const AddService = () => {
     return (
         <div>
             <Header />
-            <div className="container mb-4">
+            <div className="container mb-4 add-service">
+                <h2 className="text-center mb-3">Add a new Service</h2>
             <div className="form">
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder="Service title" defaultValue="" {...register("name", { required: true })} />

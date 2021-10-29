@@ -6,10 +6,10 @@ export const Context = createContext();
 
 const AuthProvider = ({children}) => {
 
-    const {user, setUser, signInGoogle, logOut} = useFirebase();
+    const {user, setUser, signInGoogle, logOut, isLoading, setIsLoading} = useFirebase();
 
     return (
-        <Context.Provider value={{user, setUser, signInGoogle, logOut}}>
+        <Context.Provider value={{user, setUser, signInGoogle, logOut, isLoading, setIsLoading}}>
             {children}
         </Context.Provider>
     );

@@ -13,7 +13,7 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://powerful-tor-47395.herokuapp.com/orders/${user.email}`)
         .then(res => res.json())
         .then(data => {
             setOrders(data)
@@ -30,7 +30,7 @@ const MyOrders = () => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch(`http://localhost:5000/allOrders/${id}`, {
+                fetch(`https://powerful-tor-47395.herokuapp.com/allOrders/${id}`, {
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -48,7 +48,7 @@ const MyOrders = () => {
     return (
         <div>
             <Header />
-                <div className="container">
+                <div className="container myOrder">
                 <h2 className="text-center my-4">My <span style={{color: "#ED1C24"}}>Orders</span></h2>
                 <Table striped bordered hover size="sm" responsive="sm">
                     <thead>

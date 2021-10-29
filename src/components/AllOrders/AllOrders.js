@@ -2,19 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import swal from 'sweetalert';
 import Header from '../../Shared/Header/Header';
+import './AllOrder.css';
 
 const AllOrders = () => {
 
     const [allOrders, setAllOrders] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://powerful-tor-47395.herokuapp.com/allOrders')
         .then(res => res.json())
         .then(data => setAllOrders(data))
     }, [allOrders])
 
     const handleApproved = (id) =>{
-        fetch(`http://localhost:5000/allOrders/${id}`, {
+        fetch(`https://powerful-tor-47395.herokuapp.com/allOrders/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +39,7 @@ const AllOrders = () => {
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch(`http://localhost:5000/allOrders/${id}`, {
+                fetch(`https://powerful-tor-47395.herokuapp.com/allOrders/${id}`, {
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -54,7 +55,7 @@ const AllOrders = () => {
     }
 
     return (
-        <div>
+        <div className="allOrder">
             <Header />
             <div className="container">
                 <h2 className="text-center my-4">Manage All <span style={{color: "#ED1C24"}}>Orders</span></h2>

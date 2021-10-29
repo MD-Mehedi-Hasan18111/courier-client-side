@@ -6,7 +6,7 @@ import { useHistory, useLocation } from 'react-router';
 
 const SignIn = () => {
 
-    const {setUser, signInGoogle} = useAuth();
+    const {setUser, signInGoogle, setIsLoading} = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -21,16 +21,17 @@ const SignIn = () => {
         .catch(error =>{
             console.log(error.message);
         })
+        .finally(() => setIsLoading(false))
     }
 
     return (
         <div>
             <Header />
-            <div>
+            <div className="signin">
                 <div className="signin-area text-center border border-1 border-secondary rounded-2 mt-4 mx-auto">
                     <h3>Login</h3>
                     <div>
-                        <button onClick={googleLogin} className="g-btn"><i className="fab fa-google"></i> Sign In with Google</button>
+                        <button onClick={googleLogin} className="g-btn d-flex align-items-center mx-auto"><i className="fab fa-google"></i> Continue with Google</button>
                     </div>
                 </div>
             </div>

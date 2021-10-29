@@ -21,7 +21,7 @@ const Registration = () => {
     const [regDate, setDate] = useState('');
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/registration/${id}`)
+        fetch(`https://powerful-tor-47395.herokuapp.com/registration/${id}`)
         .then(res => res.json())
         .then(data => setService(data))
     }, [])
@@ -46,7 +46,7 @@ const Registration = () => {
           })
           .then((willConfirm) => {
             if (willConfirm) {
-                fetch('http://localhost:5000/registration', {
+                fetch('https://powerful-tor-47395.herokuapp.com/registration', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -70,7 +70,7 @@ const Registration = () => {
     return (
         <div>
             <Header />
-            <div className="container mb-4">
+            <div className="container mb-4 registration">
                 <h2 className="mb-3 text-center"><span style={{color: "#ED1C24"}}>Registration</span> Service</h2>
             <div className="form">
                 <form onSubmit={handleRegister}>
