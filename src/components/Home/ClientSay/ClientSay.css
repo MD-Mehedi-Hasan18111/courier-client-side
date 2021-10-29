@@ -1,0 +1,15 @@
+.card-area {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px gray;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.card-area img {
+  border-radius: 20px;
+}
+
+.card-area:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}

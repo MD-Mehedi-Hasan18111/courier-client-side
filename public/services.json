@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Parcel Delivery",
+        "image": "https://i.ibb.co/Mcj8cNK/service-1.png",
+        "description": "First-Mile Pickup and Last Mile Delivery Services for Private, Small Business and Corporate.",
+        "charge": 100
+    },
+    {
+        "name": "Bulk Shipment",
+        "image": "https://i.ibb.co/YhnqRLX/service-2.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 220
+    },
+    {
+        "name": "Line Hall",
+        "image": "https://i.ibb.co/5cGq0PX/service-3.png",
+        "description": "All freight transport solutions including FTL (full truckload) and LTL (partial truckload).",
+        "charge": 500
+    },
+    {
+        "name": "Wire house",
+        "image": "https://i.ibb.co/hCCLmYV/service-4.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 2000
+    },
+    {
+        "name": "Wire house",
+        "image": "https://i.ibb.co/hCCLmYV/service-4.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 4000
+    },
+    {
+        "name": "Truck Rental",
+        "image": "https://i.ibb.co/bRybvk3/service-5.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 10000
+    },
+    {
+        "name": "Load-Unload",
+        "image": "https://i.ibb.co/WD8d19V/service-6.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 1000
+    },
+    {
+        "name": "Logistics Service",
+        "image": "https://i.ibb.co/SysWDVy/service-7.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 500
+    },
+    {
+        "name": "Customize Solution",
+        "image": "https://i.ibb.co/sJPPbPf/service-8.png",
+        "description": "Special solution for large items and large number of deliveries. Small Business and Corporate.",
+        "charge": 250
+    }
+]

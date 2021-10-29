@@ -1,0 +1,40 @@
+.signin-area {
+  width: 500px;
+  margin: 0 15px;
+  padding: 70px 0;
+}
+
+.g-btn {
+  border: none;
+  background-color: #fff;
+  font-size: 17px;
+  border: 1px solid darkgray;
+  border-radius: 50px;
+  padding: 10px 40px;
+  margin-top: 10px;
+}
+
+.g-btn:hover {
+  box-shadow: 0 5px 10px gray;
+}
+
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 414px) {
+  .signin-area {
+    width: 100%;
+  }
+}
