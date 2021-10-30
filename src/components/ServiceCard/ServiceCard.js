@@ -10,8 +10,8 @@ const ServiceCard = (props) => {
 
     return (
         <div>
-            <Card style={{ width: '18rem', height: "100%" }}>
-            <Card.Img variant="top" className="image" src={image} />
+            <Card style={{ width: '18rem', height: "100%" }}  className="shadow-sm">
+            <img height="350px" width="100%" src={image} alt="" />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>

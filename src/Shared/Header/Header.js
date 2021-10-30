@@ -22,11 +22,15 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="navigation ms-auto">
                     <NavLink activeClassName="selected" to="/home">Home</NavLink>
-                    <NavLink activeClassName="selected" to="/myOrders">My Orders</NavLink>
+                    {
+                        user?.email && <NavLink activeClassName="selected" to="/myOrders">My Orders</NavLink>
+                    }
                     {
                         user?.email && <NavLink activeClassName="selected" to="/allOrders">Manage All Orders</NavLink>
                     }
-                    <NavLink activeClassName="selected" to="/addService">Add Service</NavLink>
+                    {
+                        user?.email && <NavLink activeClassName="selected" to="/addService">Add Service</NavLink>
+                    }
                     {
                         user?.email ? <>
                             <button onClick={logOut} className="btn btn-sm btn-danger me-2">Sign Out</button>
